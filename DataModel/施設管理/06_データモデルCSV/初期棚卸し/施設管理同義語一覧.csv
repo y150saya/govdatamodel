@@ -1,0 +1,410 @@
+﻿対象内部管理ID,元シート名,元項目名,優先日本語名,プロパティ英語名,同義語または対応語,対応関係の種類,定義・適用範囲,出典,確認状態,備考
+CLASS_FAC,m_facilities,m_facilities,施設,Facility,m_facilities,原本テーブル名,施設基本マスタ原本テーブル名,元Excel,確認済,RDB物理テーブル原本名
+CLASS_FAC,m_facilities,m_facilities,施設,Facility,facilities,英語複数形（物理名候補）,施設エンティティの複数形,ISO 11179/Schema.org単数化対応,候補,APIエンドポイント・SQL用複数形
+CLASS_FAC,m_facilities,m_facilities,施設,Facility,施設基本マスタ,原本論理テーブル名,元Excel概要・目次シート記載名,元Excel,確認済,原本論理名
+CLASS_FAC,m_facilities,m_facilities,施設,Facility,公共施設,同義語・別名候補,行政が保有・管理する公共建築物・施設,行政実務,候補,ドメイン一般名
+CLASS_DIS,m_disaster_bases,m_disaster_bases,防災拠点,DisasterBase,m_disaster_bases,原本テーブル名,防災拠点マスタ原本テーブル名,元Excel,確認済,RDB物理テーブル原本名
+CLASS_DIS,m_disaster_bases,m_disaster_bases,防災拠点,DisasterBase,disaster_bases,英語複数形（物理名候補）,防災拠点エンティティの複数形,ISO 11179/Schema.org単数化対応,候補,APIエンドポイント・SQL用複数形
+CLASS_DIS,m_disaster_bases,m_disaster_bases,防災拠点,DisasterBase,防災拠点マスタ,原本論理テーブル名,元Excel概要・目次シート記載名,元Excel,確認済,原本論理名
+CLASS_DIS,m_disaster_bases,m_disaster_bases,防災拠点,DisasterBase,避難所,同義語・別名候補,指定避難所・緊急避難場所等の総称,災害対策基本法,候補,業務同義語
+CLASS_EQP,m_facility_equipments,m_facility_equipments,施設設備,FacilityEquipment,m_facility_equipments,原本テーブル名,設備マスタ原本テーブル名,元Excel,確認済,RDB物理テーブル原本名
+CLASS_EQP,m_facility_equipments,m_facility_equipments,施設設備,FacilityEquipment,facility_equipments,英語複数形（物理名候補）,施設設備エンティティの複数形,ISO 11179/Schema.org単数化対応,候補,APIエンドポイント・SQL用複数形
+CLASS_EQP,m_facility_equipments,m_facility_equipments,施設設備,FacilityEquipment,設備マスタ,原本論理テーブル名,元Excel概要・目次シート記載名,元Excel,確認済,原本論理名
+CLASS_FIN,t_financial_results,t_financial_results,施設財務履歴,FinancialResult,t_financial_results,原本テーブル名,収支・コスト履歴原本テーブル名,元Excel,確認済,RDB物理テーブル原本名
+CLASS_FIN,t_financial_results,t_financial_results,施設財務履歴,FinancialResult,financial_results,英語複数形（物理名候補）,財務履歴エンティティの複数形,ISO 11179/Schema.org単数化対応,候補,APIエンドポイント・SQL用複数形
+CLASS_FIN,t_financial_results,t_financial_results,施設財務履歴,FinancialResult,収支・コスト履歴,原本論理テーブル名,元Excel概要・目次シート記載名,元Excel,確認済,原本論理名
+CLASS_USG,t_usage_histories,t_usage_histories,施設利用履歴,UsageHistory,t_usage_histories,原本テーブル名,利用状況・稼働履歴原本テーブル名,元Excel,確認済,RDB物理テーブル原本名
+CLASS_USG,t_usage_histories,t_usage_histories,施設利用履歴,UsageHistory,usage_histories,英語複数形（物理名候補）,利用履歴エンティティの複数形,ISO 11179/Schema.org単数化対応,候補,APIエンドポイント・SQL用複数形
+CLASS_USG,t_usage_histories,t_usage_histories,施設利用履歴,UsageHistory,利用状況・稼働履歴,原本論理テーブル名,元Excel概要・目次シート記載名,元Excel,確認済,原本論理名
+CLASS_MNT,t_maintenance_histories,t_maintenance_histories,施設保全履歴,MaintenanceHistory,t_maintenance_histories,原本テーブル名,建物点検・修繕履歴原本テーブル名,元Excel,確認済,RDB物理テーブル原本名
+CLASS_MNT,t_maintenance_histories,t_maintenance_histories,施設保全履歴,MaintenanceHistory,maintenance_histories,英語複数形（物理名候補）,保全履歴エンティティの複数形,ISO 11179/Schema.org単数化対応,候補,APIエンドポイント・SQL用複数形
+CLASS_MNT,t_maintenance_histories,t_maintenance_histories,施設保全履歴,MaintenanceHistory,建物点検・修繕履歴,原本論理テーブル名,元Excel概要・目次シート記載名,元Excel,確認済,原本論理名
+CLASS_DST,t_disaster_status_histories,t_disaster_status_histories,避難所状況履歴,DisasterStatusHistory,t_disaster_status_histories,原本テーブル名,防災・避難状況履歴原本テーブル名,元Excel,確認済,RDB物理テーブル原本名
+CLASS_DST,t_disaster_status_histories,t_disaster_status_histories,避難所状況履歴,DisasterStatusHistory,disaster_status_histories,英語複数形（物理名候補）,避難所状況履歴エンティティの複数形,ISO 11179/Schema.org単数化対応,候補,APIエンドポイント・SQL用複数形
+CLASS_DST,t_disaster_status_histories,t_disaster_status_histories,避難所状況履歴,DisasterStatusHistory,防災・避難状況履歴,原本論理テーブル名,元Excel概要・目次シート記載名,元Excel,確認済,原本論理名
+PROP_FAC_001,m_facilities,ID,施設ID,facilityId,ID,原本項目名,PRIFIX＋地方公共団体コード＋UUID（一意の識別子）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_001,m_facilities,ID,施設ID,facilityId,施設コード,同義語・別名候補,PRIFIX＋地方公共団体コード＋UUID（一意の識別子）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_001,m_facilities,ID,施設ID,facilityId,施設識別子,同義語・別名候補,PRIFIX＋地方公共団体コード＋UUID（一意の識別子）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_002,m_facilities,関連施設ID,関連施設ID,relatedFacilityId,関連施設ID,原本項目名,同一敷地・建物内の他施設ID、ない場合は空欄,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_FAC_002,m_facilities,関連施設ID,関連施設ID,relatedFacilityId,関連施設コード,同義語・別名候補,同一敷地・建物内の他施設ID、ない場合は空欄,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_002,m_facilities,関連施設ID,関連施設ID,relatedFacilityId,敷地内施設ID,同義語・別名候補,同一敷地・建物内の他施設ID、ない場合は空欄,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_003,m_facilities,不動産ID,不動産ID,realEstateId,不動産ID,原本項目名,国土交通省のモデル,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_FAC_003,m_facilities,不動産ID,不動産ID,realEstateId,国交省不動産ID,同義語・別名候補,国土交通省のモデル,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_003,m_facilities,不動産ID,不動産ID,realEstateId,不動産識別番号,同義語・別名候補,国土交通省のモデル,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_004,m_facilities,名称,施設名称,facilityName,名称,原本項目名,施設名称（例：市庁舎、東与賀文化ホール）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_004,m_facilities,名称,施設名称,facilityName,施設名,同義語・別名候補,施設名称（例：市庁舎、東与賀文化ホール）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_004,m_facilities,名称,施設名称,facilityName,本館名,同義語・別名候補,施設名称（例：市庁舎、東与賀文化ホール）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_005,m_facilities,名称_カナ,施設名称カナ,facilityNameKana,名称_カナ,原本項目名,施設名称の全角カナ表記,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_005,m_facilities,名称_カナ,施設名称カナ,facilityNameKana,フリガナ,同義語・別名候補,施設名称の全角カナ表記,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_005,m_facilities,名称_カナ,施設名称カナ,facilityNameKana,カナ名称,同義語・別名候補,施設名称の全角カナ表記,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_006,m_facilities,名称_通称,施設通称名,facilityAliasName,名称_通称,原本項目名,施設名称の通称・別名,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_006,m_facilities,名称_通称,施設通称名,facilityAliasName,通称,同義語・別名候補,施設名称の通称・別名,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_006,m_facilities,名称_通称,施設通称名,facilityAliasName,愛称,同義語・別名候補,施設名称の通称・別名,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_007,m_facilities,所在地_都道府県,所在地都道府県,prefecture,所在地_都道府県,原本項目名,アドレス・ベース・レジストリに準ずる都道府県名,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_007,m_facilities,所在地_都道府県,所在地都道府県,prefecture,都道府県,同義語・別名候補,アドレス・ベース・レジストリに準ずる都道府県名,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_007,m_facilities,所在地_都道府県,所在地都道府県,prefecture,都道府県名,同義語・別名候補,アドレス・ベース・レジストリに準ずる都道府県名,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_008,m_facilities,所在地_市区町村,所在地市区町村,city,所在地_市区町村,原本項目名,市区町村名,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_008,m_facilities,所在地_市区町村,所在地市区町村,city,市区町村,同義語・別名候補,市区町村名,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_008,m_facilities,所在地_市区町村,所在地市区町村,city,市区町村名,同義語・別名候補,市区町村名,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_009,m_facilities,所在地_町字,所在地町字,town,所在地_町字,原本項目名,町字名,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_009,m_facilities,所在地_町字,所在地町字,town,町字,同義語・別名候補,町字名,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_009,m_facilities,所在地_町字,所在地町字,town,大字・町丁目,同義語・別名候補,町字名,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_010,m_facilities,所在地_番地以下,所在地番地以下,streetAddress,所在地_番地以下,原本項目名,番地、番、号表記,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_010,m_facilities,所在地_番地以下,所在地番地以下,streetAddress,番地以下,同義語・別名候補,番地、番、号表記,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_010,m_facilities,所在地_番地以下,所在地番地以下,streetAddress,街区符号・地番・住居番号,同義語・別名候補,番地、番、号表記,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_011,m_facilities,所在地_連結表記,所在地連結表記,fullAddress,所在地_連結表記,原本項目名,都道府県から番地以下までの連結表記,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_011,m_facilities,所在地_連結表記,所在地連結表記,fullAddress,住所,同義語・別名候補,都道府県から番地以下までの連結表記,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_011,m_facilities,所在地_連結表記,所在地連結表記,fullAddress,フルアドレス,同義語・別名候補,都道府県から番地以下までの連結表記,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_011,m_facilities,所在地_連結表記,所在地連結表記,fullAddress,施設所在地,同義語・別名候補,都道府県から番地以下までの連結表記,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_012,m_facilities,郵便番号,郵便番号,postalCode,郵便番号,原本項目名,「-」ハイフンありの郵便番号,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_FAC_012,m_facilities,郵便番号,郵便番号,postalCode,〒,同義語・別名候補,「-」ハイフンありの郵便番号,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_012,m_facilities,郵便番号,郵便番号,postalCode,郵便記号,同義語・別名候補,「-」ハイフンありの郵便番号,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_012,m_facilities,郵便番号,郵便番号,postalCode,郵便コード,同義語・別名候補,「-」ハイフンありの郵便番号,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_013,m_facilities,電話番号,電話番号,telephoneNumber,電話番号,原本項目名,「-」ハイフンありの電話番号,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_FAC_013,m_facilities,電話番号,電話番号,telephoneNumber,TEL,同義語・別名候補,「-」ハイフンありの電話番号,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_013,m_facilities,電話番号,電話番号,telephoneNumber,連絡先電話番号,同義語・別名候補,「-」ハイフンありの電話番号,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_013,m_facilities,電話番号,電話番号,telephoneNumber,代表電話番号,同義語・別名候補,「-」ハイフンありの電話番号,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_014,m_facilities,緯度,緯度,latitude,緯度,原本項目名,世界測地系での緯度,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_FAC_014,m_facilities,緯度,緯度,latitude,世界測地系緯度,同義語・別名候補,世界測地系での緯度,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_014,m_facilities,緯度,緯度,latitude,北緯,同義語・別名候補,世界測地系での緯度,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_014,m_facilities,緯度,緯度,latitude,lat,同義語・別名候補,世界測地系での緯度,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_015,m_facilities,経度,経度,longitude,経度,原本項目名,世界測地系での経度,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_FAC_015,m_facilities,経度,経度,longitude,世界測地系経度,同義語・別名候補,世界測地系での経度,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_015,m_facilities,経度,経度,longitude,東経,同義語・別名候補,世界測地系での経度,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_015,m_facilities,経度,経度,longitude,lon,同義語・別名候補,世界測地系での経度,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_015,m_facilities,経度,経度,longitude,lng,同義語・別名候補,世界測地系での経度,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_016,m_facilities,名称_英字,施設名称英字,facilityNameEn,名称_英字,原本項目名,施設名称の半角英字表記,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_016,m_facilities,名称_英字,施設名称英字,facilityNameEn,施設英語名,同義語・別名候補,施設名称の半角英字表記,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_016,m_facilities,名称_英字,施設名称英字,facilityNameEn,英語表記,同義語・別名候補,施設名称の半角英字表記,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_016,m_facilities,名称_英字,施設名称英字,facilityNameEn,ローマ字表記,同義語・別名候補,施設名称の半角英字表記,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_017,m_facilities,説明,施設概要説明,description,説明,原本項目名,施設の目的や概要、提供サービス等の説明,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_017,m_facilities,説明,施設概要説明,description,施設説明,同義語・別名候補,施設の目的や概要、提供サービス等の説明,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_017,m_facilities,説明,施設概要説明,description,施設概要,同義語・別名候補,施設の目的や概要、提供サービス等の説明,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_017,m_facilities,説明,施設概要説明,description,案内文,同義語・別名候補,施設の目的や概要、提供サービス等の説明,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_018,m_facilities,運営主体区分,運営主体区分,operatorCategory,運営主体区分,原本項目名,1:市直営、2:指定管理（利用料金あり）、3:指定管理（利用料金なし）、4:包括委託など,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_FAC_018,m_facilities,運営主体区分,運営主体区分,operatorCategory,運営区分,同義語・別名候補,1:市直営、2:指定管理（利用料金あり）、3:指定管理（利用料金なし）、4:包括委託など,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_018,m_facilities,運営主体区分,運営主体区分,operatorCategory,運営形態,同義語・別名候補,1:市直営、2:指定管理（利用料金あり）、3:指定管理（利用料金なし）、4:包括委託など,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_018,m_facilities,運営主体区分,運営主体区分,operatorCategory,管理運営方式,同義語・別名候補,1:市直営、2:指定管理（利用料金あり）、3:指定管理（利用料金なし）、4:包括委託など,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_019,m_facilities,担当部署,所管担当部署名,responsibleDepartment,担当部署,原本項目名,管理・運用を所管する部署名（例：総務・総務課）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_019,m_facilities,担当部署,所管担当部署名,responsibleDepartment,所管部署,同義語・別名候補,管理・運用を所管する部署名（例：総務・総務課）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_019,m_facilities,担当部署,所管担当部署名,responsibleDepartment,管理部署,同義語・別名候補,管理・運用を所管する部署名（例：総務・総務課）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_019,m_facilities,担当部署,所管担当部署名,responsibleDepartment,主管課,同義語・別名候補,管理・運用を所管する部署名（例：総務・総務課）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_020,m_facilities,団体名,指定管理受託団体名,managementOrganization,団体名,原本項目名,指定管理や委託を実施する団体・事業者名,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_020,m_facilities,団体名,指定管理受託団体名,managementOrganization,指定管理者名,同義語・別名候補,指定管理や委託を実施する団体・事業者名,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_020,m_facilities,団体名,指定管理受託団体名,managementOrganization,受託事業者名,同義語・別名候補,指定管理や委託を実施する団体・事業者名,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_020,m_facilities,団体名,指定管理受託団体名,managementOrganization,運営受託者,同義語・別名候補,指定管理や委託を実施する団体・事業者名,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_021,m_facilities,管理期間_開始,管理期間開始日,managementPeriodStart,管理期間_開始,原本項目名,指定管理等の場合の管理期間開始日,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_021,m_facilities,管理期間_開始,管理期間開始日,managementPeriodStart,指定管理開始日,同義語・別名候補,指定管理等の場合の管理期間開始日,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_021,m_facilities,管理期間_開始,管理期間開始日,managementPeriodStart,委託開始日,同義語・別名候補,指定管理等の場合の管理期間開始日,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_022,m_facilities,管理期間_終了,管理期間終了日,managementPeriodEnd,管理期間_終了,原本項目名,指定管理等の場合の管理期間終了日,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_022,m_facilities,管理期間_終了,管理期間終了日,managementPeriodEnd,指定管理終了日,同義語・別名候補,指定管理等の場合の管理期間終了日,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_022,m_facilities,管理期間_終了,管理期間終了日,managementPeriodEnd,委託終了日,同義語・別名候補,指定管理等の場合の管理期間終了日,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_023,m_facilities,通常時利用可能曜日,通常利用可能曜日,regularAvailableDayOfWeek,通常時利用可能曜日,原本項目名,"利用可能曜日をカンマ区切りで表記（例: 月,火,水,木,金）",公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_023,m_facilities,通常時利用可能曜日,通常利用可能曜日,regularAvailableDayOfWeek,開館曜日,同義語・別名候補,"利用可能曜日をカンマ区切りで表記（例: 月,火,水,木,金）",施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_023,m_facilities,通常時利用可能曜日,通常利用可能曜日,regularAvailableDayOfWeek,営業曜日,同義語・別名候補,"利用可能曜日をカンマ区切りで表記（例: 月,火,水,木,金）",施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_024,m_facilities,通常時開始時間,通常開館開始時刻,regularOpeningTime,通常時開始時間,原本項目名,CSV変換化け防止のため数字のみ4桁表記（例: 830）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_024,m_facilities,通常時開始時間,通常開館開始時刻,regularOpeningTime,開館時刻,同義語・別名候補,CSV変換化け防止のため数字のみ4桁表記（例: 830）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_024,m_facilities,通常時開始時間,通常開館開始時刻,regularOpeningTime,開門時刻,同義語・別名候補,CSV変換化け防止のため数字のみ4桁表記（例: 830）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_024,m_facilities,通常時開始時間,通常開館開始時刻,regularOpeningTime,営業開始時間,同義語・別名候補,CSV変換化け防止のため数字のみ4桁表記（例: 830）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_025,m_facilities,通常時終了時間,通常開館終了時刻,regularClosingTime,通常時終了時間,原本項目名,CSV変換化け防止のため数字のみ4桁表記（例: 1715）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_025,m_facilities,通常時終了時間,通常開館終了時刻,regularClosingTime,閉館時刻,同義語・別名候補,CSV変換化け防止のため数字のみ4桁表記（例: 1715）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_025,m_facilities,通常時終了時間,通常開館終了時刻,regularClosingTime,閉門時刻,同義語・別名候補,CSV変換化け防止のため数字のみ4桁表記（例: 1715）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_025,m_facilities,通常時終了時間,通常開館終了時刻,regularClosingTime,営業終了時間,同義語・別名候補,CSV変換化け防止のため数字のみ4桁表記（例: 1715）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_026,m_facilities,利用可能時間特記事項,開館時間特記事項,openingHoursSpecialNote,利用可能時間特記事項,原本項目名,曜日による時間変動や特別開館時間等の注記,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_026,m_facilities,利用可能時間特記事項,開館時間特記事項,openingHoursSpecialNote,開館時間備考,同義語・別名候補,曜日による時間変動や特別開館時間等の注記,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_026,m_facilities,利用可能時間特記事項,開館時間特記事項,openingHoursSpecialNote,時間特記,同義語・別名候補,曜日による時間変動や特別開館時間等の注記,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_027,m_facilities,休館日,定期休館日,closedDay,休館日,原本項目名,定期休館日や年末年始などの情報,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_027,m_facilities,休館日,定期休館日,closedDay,定休日,同義語・別名候補,定期休館日や年末年始などの情報,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_027,m_facilities,休館日,定期休館日,closedDay,閉館日,同義語・別名候補,定期休館日や年末年始などの情報,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_028,m_facilities,建築年月日,建築年月日,constructionDate,建築年月日,原本項目名,施設の建築（着工・竣工）日,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_FAC_028,m_facilities,建築年月日,建築年月日,constructionDate,竣工日,同義語・別名候補,施設の建築（着工・竣工）日,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_028,m_facilities,建築年月日,建築年月日,constructionDate,着工日,同義語・別名候補,施設の建築（着工・竣工）日,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_028,m_facilities,建築年月日,建築年月日,constructionDate,竣工年月日,同義語・別名候補,施設の建築（着工・竣工）日,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_028,m_facilities,建築年月日,建築年月日,constructionDate,建設日,同義語・別名候補,施設の建築（着工・竣工）日,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_029,m_facilities,経過年数,築後経過年数,buildingAgeCount,経過年数,原本項目名,築年数（基準年からの経過年数）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_029,m_facilities,経過年数,築後経過年数,buildingAgeCount,築年数,同義語・別名候補,築年数（基準年からの経過年数）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_029,m_facilities,経過年数,築後経過年数,buildingAgeCount,建物経過年数,同義語・別名候補,築年数（基準年からの経過年数）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_030,m_facilities,施設階層,施設総階数,floorCount,施設階層,原本項目名,フロア数・階層情報,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_030,m_facilities,施設階層,施設総階数,floorCount,総階数,同義語・別名候補,フロア数・階層情報,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_030,m_facilities,施設階層,施設総階数,floorCount,フロア数,同義語・別名候補,フロア数・階層情報,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_031,m_facilities,敷地面積,敷地面積,siteArea,敷地面積,原本項目名,外形上の敷地面積(㎡),公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_FAC_031,m_facilities,敷地面積,敷地面積,siteArea,敷地面積(㎡),同義語・別名候補,外形上の敷地面積(㎡),施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_031,m_facilities,敷地面積,敷地面積,siteArea,土地面積,同義語・別名候補,外形上の敷地面積(㎡),施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_032,m_facilities,用途地域,都市計画用途地域,landUseDistrict,用途地域,原本項目名,都市計画法上の用途地域（例：準工業地域）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_032,m_facilities,用途地域,都市計画用途地域,landUseDistrict,用途地域区分,同義語・別名候補,都市計画法上の用途地域（例：準工業地域）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_033,m_facilities,建ぺい率,建ぺい率,buildingCoverageRate,建ぺい率,原本項目名,建ぺい率（％）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_FAC_033,m_facilities,建ぺい率,建ぺい率,buildingCoverageRate,建ぺい率(%),同義語・別名候補,建ぺい率（％）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_033,m_facilities,建ぺい率,建ぺい率,buildingCoverageRate,指定建ぺい率,同義語・別名候補,建ぺい率（％）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_034,m_facilities,容積率,容積率,floorAreaRatio,容積率,原本項目名,容積率（％）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_FAC_034,m_facilities,容積率,容積率,floorAreaRatio,容積率(%),同義語・別名候補,容積率（％）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_034,m_facilities,容積率,容積率,floorAreaRatio,指定容積率,同義語・別名候補,容積率（％）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_035,m_facilities,建築面積,建築面積,buildingArea,建築面積,原本項目名,建物の建築面積(㎡),公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_FAC_035,m_facilities,建築面積,建築面積,buildingArea,建築面積(㎡),同義語・別名候補,建物の建築面積(㎡),施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_035,m_facilities,建築面積,建築面積,buildingArea,建坪,同義語・別名候補,建物の建築面積(㎡),施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_036,m_facilities,延床面積,延床面積,totalFloorArea,延床面積,原本項目名,建物の総延床面積(㎡),公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_FAC_036,m_facilities,延床面積,延床面積,totalFloorArea,延床面積(㎡),同義語・別名候補,建物の総延床面積(㎡),施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_036,m_facilities,延床面積,延床面積,totalFloorArea,総延床面積,同義語・別名候補,建物の総延床面積(㎡),施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_036,m_facilities,延床面積,延床面積,totalFloorArea,建物延面積,同義語・別名候補,建物の総延床面積(㎡),施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_037,m_facilities,構造,建物構造種別,buildingStructureType,構造,原本項目名,建物の構造（RC造、SRC造、S造、木造など）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_037,m_facilities,構造,建物構造種別,buildingStructureType,建築構造,同義語・別名候補,建物の構造（RC造、SRC造、S造、木造など）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_037,m_facilities,構造,建物構造種別,buildingStructureType,造り,同義語・別名候補,建物の構造（RC造、SRC造、S造、木造など）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_038,m_facilities,階数_地上,地上階数,aboveGroundFloorCount,階数_地上,原本項目名,地上階数,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_038,m_facilities,階数_地上,地上階数,aboveGroundFloorCount,地上フロア数,同義語・別名候補,地上階数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_039,m_facilities,階数_地下,地下階数,basementFloorCount,階数_地下,原本項目名,地下階数,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_039,m_facilities,階数_地下,地下階数,basementFloorCount,地下フロア数,同義語・別名候補,地下階数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_040,m_facilities,耐震対策区分,耐震対策実施区分,earthquakeResistanceStatus,耐震対策区分,原本項目名,耐震対策の実施状況（例：済、未、一部済など）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_040,m_facilities,耐震対策区分,耐震対策実施区分,earthquakeResistanceStatus,耐震化状況,同義語・別名候補,耐震対策の実施状況（例：済、未、一部済など）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_040,m_facilities,耐震対策区分,耐震対策実施区分,earthquakeResistanceStatus,耐震改修状況,同義語・別名候補,耐震対策の実施状況（例：済、未、一部済など）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_041,m_facilities,棟数,施設棟数,buildingCount,棟数,原本項目名,敷地内の総棟数,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_041,m_facilities,棟数,施設棟数,buildingCount,総棟数,同義語・別名候補,敷地内の総棟数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_041,m_facilities,棟数,施設棟数,buildingCount,建物棟数,同義語・別名候補,敷地内の総棟数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_042,m_facilities,駐車台数,駐車可能台数,parkingCapacityCount,駐車台数,原本項目名,一般・身障者用等を含む総駐車可能台数,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_042,m_facilities,駐車台数,駐車可能台数,parkingCapacityCount,駐車場収容台数,同義語・別名候補,一般・身障者用等を含む総駐車可能台数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_042,m_facilities,駐車台数,駐車可能台数,parkingCapacityCount,駐車スペース数,同義語・別名候補,一般・身障者用等を含む総駐車可能台数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_043,m_facilities,URL,詳細情報URL,url,URL,原本項目名,詳細情報が掲載されているWebサイトのURL,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_043,m_facilities,URL,詳細情報URL,url,公式Webサイト,同義語・別名候補,詳細情報が掲載されているWebサイトのURL,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_043,m_facilities,URL,詳細情報URL,url,ホームページURL,同義語・別名候補,詳細情報が掲載されているWebサイトのURL,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_044,m_facilities,画像,外観画像URI,imageUri,画像,原本項目名,施設外観等のサムネイル画像URL,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_044,m_facilities,画像,外観画像URI,imageUri,サムネイル画像,同義語・別名候補,施設外観等のサムネイル画像URL,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_044,m_facilities,画像,外観画像URI,imageUri,施設外観写真,同義語・別名候補,施設外観等のサムネイル画像URL,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_045,m_facilities,画像_ライセンス,画像ライセンス,imageLicense,画像_ライセンス,原本項目名,画像の著作権・ライセンス情報（例：CC-BY4.0）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_045,m_facilities,画像_ライセンス,画像ライセンス,imageLicense,著作権情報,同義語・別名候補,画像の著作権・ライセンス情報（例：CC-BY4.0）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_045,m_facilities,画像_ライセンス,画像ライセンス,imageLicense,CCライセンス,同義語・別名候補,画像の著作権・ライセンス情報（例：CC-BY4.0）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_046,m_facilities,備考,施設特記事項備考,remarks,備考,原本項目名,その他特記事項,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_046,m_facilities,備考,施設特記事項備考,remarks,その他特記事項,同義語・別名候補,その他特記事項,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_046,m_facilities,備考,施設特記事項備考,remarks,メモ,同義語・別名候補,その他特記事項,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_047,m_facilities,更新日,情報更新年月日,updateDate,更新日,原本項目名,情報の更新日または公開日,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FAC_047,m_facilities,更新日,情報更新年月日,updateDate,最終更新日,同義語・別名候補,情報の更新日または公開日,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FAC_047,m_facilities,更新日,情報更新年月日,updateDate,公開年月日,同義語・別名候補,情報の更新日または公開日,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_001,m_disaster_bases,防災拠点ID,防災拠点ID,disasterBaseId,防災拠点ID,原本項目名,防災拠点を一意に識別するID,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_DIS_001,m_disaster_bases,防災拠点ID,防災拠点ID,disasterBaseId,拠点ID,同義語・別名候補,防災拠点を一意に識別するID,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_001,m_disaster_bases,防災拠点ID,防災拠点ID,disasterBaseId,避難所拠点ID,同義語・別名候補,防災拠点を一意に識別するID,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_002,m_disaster_bases,施設ID,施設ID,facilityId,施設ID,原本項目名,施設基本マスタ(m_facilities)のIDへのリンク,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_DIS_002,m_disaster_bases,施設ID,施設ID,facilityId,施設コード,同義語・別名候補,施設基本マスタ(m_facilities)のIDへのリンク,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_002,m_disaster_bases,施設ID,施設ID,facilityId,紐付け施設ID,同義語・別名候補,施設基本マスタ(m_facilities)のIDへのリンク,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_003,m_disaster_bases,避難所指定区分,避難所指定区分,shelterDesignationCategory,避難所指定区分,原本項目名,指定緊急避難場所、指定避難所、福祉避難所、一時滞在施設、在宅避難などの種別,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_DIS_003,m_disaster_bases,避難所指定区分,避難所指定区分,shelterDesignationCategory,避難所種別,同義語・別名候補,指定緊急避難場所、指定避難所、福祉避難所、一時滞在施設、在宅避難などの種別,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_003,m_disaster_bases,避難所指定区分,避難所指定区分,shelterDesignationCategory,避難施設区分,同義語・別名候補,指定緊急避難場所、指定避難所、福祉避難所、一時滞在施設、在宅避難などの種別,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_003,m_disaster_bases,避難所指定区分,避難所指定区分,shelterDesignationCategory,指定区分,同義語・別名候補,指定緊急避難場所、指定避難所、福祉避難所、一時滞在施設、在宅避難などの種別,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_004,m_disaster_bases,想定収容人数,災害時想定収容人数,estimatedCapacityCount,想定収容人数,原本項目名,災害時に受け入れ可能な最大想定人数,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DIS_004,m_disaster_bases,想定収容人数,災害時想定収容人数,estimatedCapacityCount,収容定員,同義語・別名候補,災害時に受け入れ可能な最大想定人数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_004,m_disaster_bases,想定収容人数,災害時想定収容人数,estimatedCapacityCount,受入可能人数,同義語・別名候補,災害時に受け入れ可能な最大想定人数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_005,m_disaster_bases,自家発電設備フラグ,自家発電設備有無,hasPrivatePowerGenerator,自家発電設備フラグ,原本項目名,有:1、無:0,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DIS_005,m_disaster_bases,自家発電設備フラグ,自家発電設備有無,hasPrivatePowerGenerator,自家発電有無,同義語・別名候補,有:1、無:0,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_005,m_disaster_bases,自家発電設備フラグ,自家発電設備有無,hasPrivatePowerGenerator,発電機有無,同義語・別名候補,有:1、無:0,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_006,m_disaster_bases,受水槽フラグ,受水槽有無,hasWaterTank,受水槽フラグ,原本項目名,有:1、無:0,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DIS_006,m_disaster_bases,受水槽フラグ,受水槽有無,hasWaterTank,飲料水槽有無,同義語・別名候補,有:1、無:0,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_006,m_disaster_bases,受水槽フラグ,受水槽有無,hasWaterTank,貯水槽有無,同義語・別名候補,有:1、無:0,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_007,m_disaster_bases,防災備蓄倉庫フラグ,防災備蓄倉庫有無,hasEmergencyStorage,防災備蓄倉庫フラグ,原本項目名,有:1、無:0,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DIS_007,m_disaster_bases,防災備蓄倉庫フラグ,防災備蓄倉庫有無,hasEmergencyStorage,備蓄倉庫有無,同義語・別名候補,有:1、無:0,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_007,m_disaster_bases,防災備蓄倉庫フラグ,防災備蓄倉庫有無,hasEmergencyStorage,防災倉庫有無,同義語・別名候補,有:1、無:0,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_008,m_disaster_bases,防災マンホールトイレフラグ,マンホールトイレ有無,hasManholeToilet,防災マンホールトイレフラグ,原本項目名,有:1、無:0,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DIS_008,m_disaster_bases,防災マンホールトイレフラグ,マンホールトイレ有無,hasManholeToilet,非常用トイレ設備有無,同義語・別名候補,有:1、無:0,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_009,m_disaster_bases,特記事項,防災拠点特記事項,specialInstructions,特記事項,原本項目名,防災拠点としての固有の注意点や運用ルール,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DIS_009,m_disaster_bases,特記事項,防災拠点特記事項,specialInstructions,拠点運用注意事項,同義語・別名候補,防災拠点としての固有の注意点や運用ルール,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DIS_009,m_disaster_bases,特記事項,防災拠点特記事項,specialInstructions,避難所備考,同義語・別名候補,防災拠点としての固有の注意点や運用ルール,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_EQP_001,m_facility_equipments,設備ID,設備個体ID,equipmentId,設備ID,原本項目名,設備レコードを一意に識別するID,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_EQP_001,m_facility_equipments,設備ID,設備個体ID,equipmentId,施設設備ID,同義語・別名候補,設備レコードを一意に識別するID,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_EQP_002,m_facility_equipments,施設ID,施設ID,facilityId,施設ID,原本項目名,施設基本マスタ(m_facilities)のIDへのリンク,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_EQP_002,m_facility_equipments,施設ID,施設ID,facilityId,施設コード,同義語・別名候補,施設基本マスタ(m_facilities)のIDへのリンク,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_EQP_002,m_facility_equipments,施設ID,施設ID,facilityId,設置施設ID,同義語・別名候補,施設基本マスタ(m_facilities)のIDへのリンク,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_EQP_003,m_facility_equipments,設備種別コード,設備種別コード,equipmentTypeCode,設備種別コード,原本項目名,設備コード参照,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_EQP_003,m_facility_equipments,設備種別コード,設備種別コード,equipmentTypeCode,設備コード,同義語・別名候補,設備コード参照,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_EQP_003,m_facility_equipments,設備種別コード,設備種別コード,equipmentTypeCode,バリアフリー設備コード,同義語・別名候補,設備コード参照,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_EQP_003,m_facility_equipments,設備種別コード,設備種別コード,equipmentTypeCode,設備区分,同義語・別名候補,設備コード参照,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_EQP_004,m_facility_equipments,数量,設備設置数量,equipmentQuantityCount,数量,原本項目名,設置数量（例：貸出用車椅子3台など）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_EQP_004,m_facility_equipments,数量,設備設置数量,equipmentQuantityCount,設置台数,同義語・別名候補,設置数量（例：貸出用車椅子3台など）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_EQP_004,m_facility_equipments,数量,設備設置数量,equipmentQuantityCount,設置個数,同義語・別名候補,設置数量（例：貸出用車椅子3台など）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_EQP_005,m_facility_equipments,設置場所・詳細説明,設備設置場所説明,installationLocationDescription,設置場所・詳細説明,原本項目名,館内の設置場所や利用条件等の詳細情報（ep06の場合、説明）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_EQP_005,m_facility_equipments,設置場所・詳細説明,設備設置場所説明,installationLocationDescription,設置箇所,同義語・別名候補,館内の設置場所や利用条件等の詳細情報（ep06の場合、説明）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_EQP_005,m_facility_equipments,設置場所・詳細説明,設備設置場所説明,installationLocationDescription,利用条件説明,同義語・別名候補,館内の設置場所や利用条件等の詳細情報（ep06の場合、説明）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_001,t_financial_results,履歴ID,財務履歴ID,financialResultId,履歴ID,原本項目名,財務履歴を一意に識別するID,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FIN_001,t_financial_results,履歴ID,財務履歴ID,financialResultId,財務実績ID,同義語・別名候補,財務履歴を一意に識別するID,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_001,t_financial_results,履歴ID,財務履歴ID,financialResultId,会計履歴レコードID,同義語・別名候補,財務履歴を一意に識別するID,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_002,t_financial_results,施設ID,施設ID,facilityId,施設ID,原本項目名,施設基本マスタ(m_facilities)のIDへのリンク,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_FIN_002,t_financial_results,施設ID,施設ID,facilityId,施設コード,同義語・別名候補,施設基本マスタ(m_facilities)のIDへのリンク,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_002,t_financial_results,施設ID,施設ID,facilityId,対象施設ID,同義語・別名候補,施設基本マスタ(m_facilities)のIDへのリンク,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_003,t_financial_results,対象年度,会計対象年度,fiscalYear,対象年度,原本項目名,会計対象年度（例：令和6年度、2024年度）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FIN_003,t_financial_results,対象年度,会計対象年度,fiscalYear,決算年度,同義語・別名候補,会計対象年度（例：令和6年度、2024年度）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_003,t_financial_results,対象年度,会計対象年度,fiscalYear,実績年度,同義語・別名候補,会計対象年度（例：令和6年度、2024年度）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_003,t_financial_results,対象年度,会計対象年度,fiscalYear,年度,同義語・別名候補,会計対象年度（例：令和6年度、2024年度）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_004,t_financial_results,収入_利用料,利用料収入額,revenueUsageFeeAmount,収入_利用料,原本項目名,施設利用に伴う直接的な現金収入（円）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FIN_004,t_financial_results,収入_利用料,利用料収入額,revenueUsageFeeAmount,施設使用料収入,同義語・別名候補,施設利用に伴う直接的な現金収入（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_004,t_financial_results,収入_利用料,利用料収入額,revenueUsageFeeAmount,料金収入,同義語・別名候補,施設利用に伴う直接的な現金収入（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_005,t_financial_results,収入_その他,その他雑収入額,revenueOtherAmount,収入_その他,原本項目名,自動販売機設置料やその他雑収入（円）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FIN_005,t_financial_results,収入_その他,その他雑収入額,revenueOtherAmount,雑入,同義語・別名候補,自動販売機設置料やその他雑収入（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_005,t_financial_results,収入_その他,その他雑収入額,revenueOtherAmount,自動販売機設置料等,同義語・別名候補,自動販売機設置料やその他雑収入（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_006,t_financial_results,収入_合計,収入合計額,revenueTotalAmount,収入_合計,原本項目名,収入の部 合計額（円）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FIN_006,t_financial_results,収入_合計,収入合計額,revenueTotalAmount,総収入,同義語・別名候補,収入の部 合計額（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_006,t_financial_results,収入_合計,収入合計額,revenueTotalAmount,歳入合計,同義語・別名候補,収入の部 合計額（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_007,t_financial_results,支出_修繕費,修繕費支出額,expenditureRepairAmount,支出_修繕費,原本項目名,施設維持のための修繕費用（円）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FIN_007,t_financial_results,支出_修繕費,修繕費支出額,expenditureRepairAmount,維持修繕費,同義語・別名候補,施設維持のための修繕費用（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_007,t_financial_results,支出_修繕費,修繕費支出額,expenditureRepairAmount,保全工事費,同義語・別名候補,施設維持のための修繕費用（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_008,t_financial_results,支出_光熱水費,光熱水費支出額,expenditureUtilityAmount,支出_光熱水費,原本項目名,電気・ガス・水道料金の総額（円）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FIN_008,t_financial_results,支出_光熱水費,光熱水費支出額,expenditureUtilityAmount,水道光熱費,同義語・別名候補,電気・ガス・水道料金の総額（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_008,t_financial_results,支出_光熱水費,光熱水費支出額,expenditureUtilityAmount,エネルギーコスト,同義語・別名候補,電気・ガス・水道料金の総額（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_009,t_financial_results,支出_管理費,維持管理委託費支出額,expenditureManagementAmount,支出_管理費,原本項目名,委託料やその他維持管理に必要なコスト（円）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FIN_009,t_financial_results,支出_管理費,維持管理委託費支出額,expenditureManagementAmount,管理委託料,同義語・別名候補,委託料やその他維持管理に必要なコスト（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_009,t_financial_results,支出_管理費,維持管理委託費支出額,expenditureManagementAmount,業務委託費,同義語・別名候補,委託料やその他維持管理に必要なコスト（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_010,t_financial_results,支出_人件費,運営人件費支出額,expenditurePersonnelAmount,支出_人件費,原本項目名,施設運営に関わる職員・スタッフの人件費（円）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FIN_010,t_financial_results,支出_人件費,運営人件費支出額,expenditurePersonnelAmount,職員人件費,同義語・別名候補,施設運営に関わる職員・スタッフの人件費（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_010,t_financial_results,支出_人件費,運営人件費支出額,expenditurePersonnelAmount,スタッフ人件費,同義語・別名候補,施設運営に関わる職員・スタッフの人件費（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_011,t_financial_results,支出_その他,その他直接支出額,expenditureOtherAmount,支出_その他,原本項目名,上記以外のその他直接支出（円）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FIN_011,t_financial_results,支出_その他,その他直接支出額,expenditureOtherAmount,雑支出,同義語・別名候補,上記以外のその他直接支出（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_011,t_financial_results,支出_その他,その他直接支出額,expenditureOtherAmount,需用費等,同義語・別名候補,上記以外のその他直接支出（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_012,t_financial_results,現金支出_計,現金支出合計額,cashExpenditureTotalAmount,現金支出_計,原本項目名,現金収支を伴うコストの合計額（円）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FIN_012,t_financial_results,現金支出_計,現金支出合計額,cashExpenditureTotalAmount,現金収支コスト計,同義語・別名候補,現金収支を伴うコストの合計額（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_012,t_financial_results,現金支出_計,現金支出合計額,cashExpenditureTotalAmount,歳出現金計,同義語・別名候補,現金収支を伴うコストの合計額（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_013,t_financial_results,非現金支出_減価償却額,減価償却費額,nonCashDepreciationAmount,非現金支出_減価償却額,原本項目名,現金収支を伴わないコスト（減価償却費など）（円）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FIN_013,t_financial_results,非現金支出_減価償却額,減価償却費額,nonCashDepreciationAmount,減価償却費,同義語・別名候補,現金収支を伴わないコスト（減価償却費など）（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_013,t_financial_results,非現金支出_減価償却額,減価償却費額,nonCashDepreciationAmount,非現金支出計,同義語・別名候補,現金収支を伴わないコスト（減価償却費など）（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_014,t_financial_results,トータルコスト,施設総コスト額,totalCostAmount,トータルコスト,原本項目名,現金支出計 ＋ 非現金支出額の総額（円）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FIN_014,t_financial_results,トータルコスト,施設総コスト額,totalCostAmount,フルコスト総額,同義語・別名候補,現金支出計 ＋ 非現金支出額の総額（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_014,t_financial_results,トータルコスト,施設総コスト額,totalCostAmount,施設維持管理総費用,同義語・別名候補,現金支出計 ＋ 非現金支出額の総額（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_015,t_financial_results,収支差額,実質財政負担収支差額,fiscalBalanceAmount,収支差額,原本項目名,トータルコスト － 収入合計（または実質的な財政負担額）（円）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_FIN_015,t_financial_results,収支差額,実質財政負担収支差額,fiscalBalanceAmount,実質財政負担額,同義語・別名候補,トータルコスト － 収入合計（または実質的な財政負担額）（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_FIN_015,t_financial_results,収支差額,実質財政負担収支差額,fiscalBalanceAmount,公費負担額,同義語・別名候補,トータルコスト － 収入合計（または実質的な財政負担額）（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_001,t_usage_histories,履歴ID,利用履歴ID,usageHistoryId,履歴ID,原本項目名,利用状況履歴を一意に識別するID,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_USG_001,t_usage_histories,履歴ID,利用履歴ID,usageHistoryId,利用実績ID,同義語・別名候補,利用状況履歴を一意に識別するID,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_001,t_usage_histories,履歴ID,利用履歴ID,usageHistoryId,稼働履歴レコードID,同義語・別名候補,利用状況履歴を一意に識別するID,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_002,t_usage_histories,施設ID,施設ID,facilityId,施設ID,原本項目名,施設基本マスタ(m_facilities)のIDへのリンク,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_USG_002,t_usage_histories,施設ID,施設ID,facilityId,施設コード,同義語・別名候補,施設基本マスタ(m_facilities)のIDへのリンク,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_002,t_usage_histories,施設ID,施設ID,facilityId,対象施設ID,同義語・別名候補,施設基本マスタ(m_facilities)のIDへのリンク,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_003,t_usage_histories,集計対象期間,利用集計対象期間,aggregationPeriod,集計対象期間,原本項目名,年度、または月次単位の表記（例：2024年度、2024-04）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_USG_003,t_usage_histories,集計対象期間,利用集計対象期間,aggregationPeriod,対象期間,同義語・別名候補,年度、または月次単位の表記（例：2024年度、2024-04）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_003,t_usage_histories,集計対象期間,利用集計対象期間,aggregationPeriod,稼働期間,同義語・別名候補,年度、または月次単位の表記（例：2024年度、2024-04）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_003,t_usage_histories,集計対象期間,利用集計対象期間,aggregationPeriod,実績年月,同義語・別名候補,年度、または月次単位の表記（例：2024年度、2024-04）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_004,t_usage_histories,開館日数,実開館日数,openDayCount,開館日数,原本項目名,期間中の実際の開館（運営）日数（日）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_USG_004,t_usage_histories,開館日数,実開館日数,openDayCount,営業日数,同義語・別名候補,期間中の実際の開館（運営）日数（日）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_004,t_usage_histories,開館日数,実開館日数,openDayCount,運営日数,同義語・別名候補,期間中の実際の開館（運営）日数（日）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_005,t_usage_histories,総利用者数,延べ総利用者数,totalUserCount,総利用者数,原本項目名,期間中の延べ利用者数（人）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_USG_005,t_usage_histories,総利用者数,延べ総利用者数,totalUserCount,延べ人数,同義語・別名候補,期間中の延べ利用者数（人）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_005,t_usage_histories,総利用者数,延べ総利用者数,totalUserCount,来館者数,同義語・別名候補,期間中の延べ利用者数（人）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_006,t_usage_histories,利用件数,貸室利用総件数,usageCaseCount,利用件数,原本項目名,貸室等の総利用コマ数・件数,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_USG_006,t_usage_histories,利用件数,貸室利用総件数,usageCaseCount,貸室利用コマ数,同義語・別名候補,貸室等の総利用コマ数・件数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_006,t_usage_histories,利用件数,貸室利用総件数,usageCaseCount,予約利用件数,同義語・別名候補,貸室等の総利用コマ数・件数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_007,t_usage_histories,一日あたりコスト,開館日一日あたりコスト額,costPerDayAmount,一日あたりコスト,原本項目名,計算値：現金支出計 ÷ 開館日数（円）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_USG_007,t_usage_histories,一日あたりコスト,開館日一日あたりコスト額,costPerDayAmount,日当たり運営費,同義語・別名候補,計算値：現金支出計 ÷ 開館日数（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_007,t_usage_histories,一日あたりコスト,開館日一日あたりコスト額,costPerDayAmount,開館日単価,同義語・別名候補,計算値：現金支出計 ÷ 開館日数（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_008,t_usage_histories,利用者一人あたりコスト,利用者一人あたりコスト額,costPerUserAmount,利用者一人あたりコスト,原本項目名,計算値：現金支出計 ÷ 総利用者数（円）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_USG_008,t_usage_histories,利用者一人あたりコスト,利用者一人あたりコスト額,costPerUserAmount,利用者単価,同義語・別名候補,計算値：現金支出計 ÷ 総利用者数（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_008,t_usage_histories,利用者一人あたりコスト,利用者一人あたりコスト額,costPerUserAmount,1人あたり公費負担,同義語・別名候補,計算値：現金支出計 ÷ 総利用者数（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_009,t_usage_histories,延床面積1㎡あたりコスト,延床面積1㎡あたり総コスト額,costPerTotalFloorAreaAmount,延床面積1㎡あたりコスト,原本項目名,計算値：トータルコスト ÷ 延床面積（円）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_USG_009,t_usage_histories,延床面積1㎡あたりコスト,延床面積1㎡あたり総コスト額,costPerTotalFloorAreaAmount,単位面積当たりコスト,同義語・別名候補,計算値：トータルコスト ÷ 延床面積（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_USG_009,t_usage_histories,延床面積1㎡あたりコスト,延床面積1㎡あたり総コスト額,costPerTotalFloorAreaAmount,㎡単価,同義語・別名候補,計算値：トータルコスト ÷ 延床面積（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_001,t_maintenance_histories,点検修繕ID,点検修繕ID,maintenanceId,点検修繕ID,原本項目名,点検または修繕の履歴を一意に識別するID,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_MNT_001,t_maintenance_histories,点検修繕ID,点検修繕ID,maintenanceId,保全ID,同義語・別名候補,点検または修繕の履歴を一意に識別するID,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_001,t_maintenance_histories,点検修繕ID,点検修繕ID,maintenanceId,点検履歴ID,同義語・別名候補,点検または修繕の履歴を一意に識別するID,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_001,t_maintenance_histories,点検修繕ID,点検修繕ID,maintenanceId,工事履歴ID,同義語・別名候補,点検または修繕の履歴を一意に識別するID,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_002,t_maintenance_histories,施設ID,施設ID,facilityId,施設ID,原本項目名,施設基本マスタ(m_facilities)のIDへのリンク,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_MNT_002,t_maintenance_histories,施設ID,施設ID,facilityId,施設コード,同義語・別名候補,施設基本マスタ(m_facilities)のIDへのリンク,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_002,t_maintenance_histories,施設ID,施設ID,facilityId,対象施設ID,同義語・別名候補,施設基本マスタ(m_facilities)のIDへのリンク,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_003,t_maintenance_histories,実施日_計画日,点検修繕実施計画年月日,maintenanceEventDate,実施日_計画日,原本項目名,点検・修繕の実施日、または計画日,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_MNT_003,t_maintenance_histories,実施日_計画日,点検修繕実施計画年月日,maintenanceEventDate,工事実施日,同義語・別名候補,点検・修繕の実施日、または計画日,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_003,t_maintenance_histories,実施日_計画日,点検修繕実施計画年月日,maintenanceEventDate,点検日,同義語・別名候補,点検・修繕の実施日、または計画日,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_003,t_maintenance_histories,実施日_計画日,点検修繕実施計画年月日,maintenanceEventDate,計画年月日,同義語・別名候補,点検・修繕の実施日、または計画日,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_004,t_maintenance_histories,データ区分,点検修繕データ区分,maintenanceDataCategory,データ区分,原本項目名,1:点検結果実績、2:実際の修繕実績、3:長期修繕計画（試算）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_MNT_004,t_maintenance_histories,データ区分,点検修繕データ区分,maintenanceDataCategory,保全種別,同義語・別名候補,1:点検結果実績、2:実際の修繕実績、3:長期修繕計画（試算）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_004,t_maintenance_histories,データ区分,点検修繕データ区分,maintenanceDataCategory,実績計画区分,同義語・別名候補,1:点検結果実績、2:実際の修繕実績、3:長期修繕計画（試算）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_005,t_maintenance_histories,対象部位,保全点検対象部位,maintenanceTargetPart,対象部位,原本項目名,屋上、外壁、電気設備、機械設備（空調・衛生）、昇降機、消防用設備など,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_MNT_005,t_maintenance_histories,対象部位,保全点検対象部位,maintenanceTargetPart,部位区分,同義語・別名候補,屋上、外壁、電気設備、機械設備（空調・衛生）、昇降機、消防用設備など,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_005,t_maintenance_histories,対象部位,保全点検対象部位,maintenanceTargetPart,対象設備・部位,同義語・別名候補,屋上、外壁、電気設備、機械設備（空調・衛生）、昇降機、消防用設備など,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_006,t_maintenance_histories,劣化度スコア,部位劣化度判定スコア,deteriorationScore,劣化度スコア,原本項目名,点検時の劣化評価（例：1:劣化なし、2:劣化度小、3:劣化度大など）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_MNT_006,t_maintenance_histories,劣化度スコア,部位劣化度判定スコア,deteriorationScore,劣化判定,同義語・別名候補,点検時の劣化評価（例：1:劣化なし、2:劣化度小、3:劣化度大など）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_006,t_maintenance_histories,劣化度スコア,部位劣化度判定スコア,deteriorationScore,健全度スコア,同義語・別名候補,点検時の劣化評価（例：1:劣化なし、2:劣化度小、3:劣化度大など）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_007,t_maintenance_histories,総合評価ステータス,施設健全性総合評価,overallConditionStatus,総合評価ステータス,原本項目名,施設全体の劣化レベル・安全評価（例：劣化レベル3）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_MNT_007,t_maintenance_histories,総合評価ステータス,施設健全性総合評価,overallConditionStatus,施設劣化レベル,同義語・別名候補,施設全体の劣化レベル・安全評価（例：劣化レベル3）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_007,t_maintenance_histories,総合評価ステータス,施設健全性総合評価,overallConditionStatus,総合判定,同義語・別名候補,施設全体の劣化レベル・安全評価（例：劣化レベル3）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_008,t_maintenance_histories,対応内容詳細,点検修繕対応内容詳細,maintenanceActionDescription,対応内容詳細,原本項目名,具体的な修繕工事内容や点検指摘事項のテキスト,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_MNT_008,t_maintenance_histories,対応内容詳細,点検修繕対応内容詳細,maintenanceActionDescription,工事件名・指摘事項,同義語・別名候補,具体的な修繕工事内容や点検指摘事項のテキスト,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_008,t_maintenance_histories,対応内容詳細,点検修繕対応内容詳細,maintenanceActionDescription,措置内容,同義語・別名候補,具体的な修繕工事内容や点検指摘事項のテキスト,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_009,t_maintenance_histories,費用額,点検修繕費用額,maintenanceCostAmount,費用額,原本項目名,実際の修繕費用、または40年間累計等の長期修繕計画試算額（円）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_MNT_009,t_maintenance_histories,費用額,点検修繕費用額,maintenanceCostAmount,修繕工事費,同義語・別名候補,実際の修繕費用、または40年間累計等の長期修繕計画試算額（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_009,t_maintenance_histories,費用額,点検修繕費用額,maintenanceCostAmount,長期計画試算額,同義語・別名候補,実際の修繕費用、または40年間累計等の長期修繕計画試算額（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_MNT_009,t_maintenance_histories,費用額,点検修繕費用額,maintenanceCostAmount,工事金額,同義語・別名候補,実際の修繕費用、または40年間累計等の長期修繕計画試算額（円）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_001,t_disaster_status_histories,状況ID,避難所状況報告ID,disasterStatusId,状況ID,原本項目名,リアルタイムの状況更新を一意に識別するID,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DST_001,t_disaster_status_histories,状況ID,避難所状況報告ID,disasterStatusId,避難状況ID,同義語・別名候補,リアルタイムの状況更新を一意に識別するID,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_001,t_disaster_status_histories,状況ID,避難所状況報告ID,disasterStatusId,リアルタイム報告ID,同義語・別名候補,リアルタイムの状況更新を一意に識別するID,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_002,t_disaster_status_histories,防災拠点ID,防災拠点ID,disasterBaseId,防災拠点ID,原本項目名,防災拠点マスタ(m_disaster_bases)のIDへのリンク,公共施設with防災・ファシマネ属性.xlsx,確認済,原本名と優先名が一致
+PROP_DST_002,t_disaster_status_histories,防災拠点ID,防災拠点ID,disasterBaseId,拠点ID,同義語・別名候補,防災拠点マスタ(m_disaster_bases)のIDへのリンク,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_002,t_disaster_status_histories,防災拠点ID,防災拠点ID,disasterBaseId,対象避難所ID,同義語・別名候補,防災拠点マスタ(m_disaster_bases)のIDへのリンク,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_003,t_disaster_status_histories,更新日時,状況報告日時,statusUpdateDateTime,更新日時,原本項目名,避難所から情報が報告・更新された正確な日時,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DST_003,t_disaster_status_histories,更新日時,状況報告日時,statusUpdateDateTime,報告日時,同義語・別名候補,避難所から情報が報告・更新された正確な日時,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_003,t_disaster_status_histories,更新日時,状況報告日時,statusUpdateDateTime,現況確認日時,同義語・別名候補,避難所から情報が報告・更新された正確な日時,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_004,t_disaster_status_histories,開設ステータス,避難所開設状況ステータス,shelterOpeningStatus,開設ステータス,原本項目名,0:閉鎖中、1:開設準備中、2:開設済、3:満員（受入停止）、4:一時中断,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DST_004,t_disaster_status_histories,開設ステータス,避難所開設状況ステータス,shelterOpeningStatus,開設状況,同義語・別名候補,0:閉鎖中、1:開設準備中、2:開設済、3:満員（受入停止）、4:一時中断,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_004,t_disaster_status_histories,開設ステータス,避難所開設状況ステータス,shelterOpeningStatus,避難所運用状態,同義語・別名候補,0:閉鎖中、1:開設準備中、2:開設済、3:満員（受入停止）、4:一時中断,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_005,t_disaster_status_histories,現在避難者数_総数,現在避難者総人数,currentEvacueeTotalCount,現在避難者数_総数,原本項目名,現在避難している人の合計人数,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DST_005,t_disaster_status_histories,現在避難者数_総数,現在避難者総人数,currentEvacueeTotalCount,現在避難者数,同義語・別名候補,現在避難している人の合計人数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_005,t_disaster_status_histories,現在避難者数_総数,現在避難者総人数,currentEvacueeTotalCount,滞在人数合計,同義語・別名候補,現在避難している人の合計人数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_006,t_disaster_status_histories,現在避難者数_男性,現在避難者数男性人数,currentEvacueeMaleCount,現在避難者数_男性,原本項目名,内訳：男性人数,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DST_006,t_disaster_status_histories,現在避難者数_男性,現在避難者数男性人数,currentEvacueeMaleCount,男性避難者数,同義語・別名候補,内訳：男性人数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_007,t_disaster_status_histories,現在避難者数_女性,現在避難者数女性人数,currentEvacueeFemaleCount,現在避難者数_女性,原本項目名,内訳：女性人数,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DST_007,t_disaster_status_histories,現在避難者数_女性,現在避難者数女性人数,currentEvacueeFemaleCount,女性避難者数,同義語・別名候補,内訳：女性人数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_008,t_disaster_status_histories,現在避難者数_要配慮者,現在避難者数要配慮者人数,currentEvacueeVulnerableCount,現在避難者数_要配慮者,原本項目名,内訳：高齢者、妊産婦、障がい者等の要配慮人数,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DST_008,t_disaster_status_histories,現在避難者数_要配慮者,現在避難者数要配慮者人数,currentEvacueeVulnerableCount,要援護者避難人数,同義語・別名候補,内訳：高齢者、妊産婦、障がい者等の要配慮人数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_008,t_disaster_status_histories,現在避難者数_要配慮者,現在避難者数要配慮者人数,currentEvacueeVulnerableCount,高齢者・妊産婦等滞在数,同義語・別名候補,内訳：高齢者、妊産婦、障がい者等の要配慮人数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_009,t_disaster_status_histories,備蓄状況_食料残量,備蓄食料残量数量,stockFoodRemainingQuantity,備蓄状況_食料残量,原本項目名,備蓄食料の残り（何日分、または個数）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DST_009,t_disaster_status_histories,備蓄状況_食料残量,備蓄食料残量数量,stockFoodRemainingQuantity,食料備蓄残数,同義語・別名候補,備蓄食料の残り（何日分、または個数）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_009,t_disaster_status_histories,備蓄状況_食料残量,備蓄食料残量数量,stockFoodRemainingQuantity,残存食料,同義語・別名候補,備蓄食料の残り（何日分、または個数）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_010,t_disaster_status_histories,備蓄状況_飲料水残量,備蓄飲料水残量数量,stockWaterRemainingQuantity,備蓄状況_飲料水残量,原本項目名,飲料水の残り（リットル）,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DST_010,t_disaster_status_histories,備蓄状況_飲料水残量,備蓄飲料水残量数量,stockWaterRemainingQuantity,飲料水備蓄残量,同義語・別名候補,飲料水の残り（リットル）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_010,t_disaster_status_histories,備蓄状況_飲料水残量,備蓄飲料水残量数量,stockWaterRemainingQuantity,残存飲料水(L),同義語・別名候補,飲料水の残り（リットル）,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_011,t_disaster_status_histories,備蓄状況_毛布数,備蓄毛布残量枚数,stockBlanketCount,備蓄状況_毛布数,原本項目名,利用可能な毛布の残り枚数,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DST_011,t_disaster_status_histories,備蓄状況_毛布数,備蓄毛布残量枚数,stockBlanketCount,毛布備蓄数,同義語・別名候補,利用可能な毛布の残り枚数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_011,t_disaster_status_histories,備蓄状況_毛布数,備蓄毛布残量枚数,stockBlanketCount,利用可能毛布数,同義語・別名候補,利用可能な毛布の残り枚数,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_012,t_disaster_status_histories,ライフライン_電気,電気ライフライン状況ステータス,lifelineElectricityStatus,ライフライン_電気,原本項目名,0:停電(ライフライン切断)、1:自家発稼働、2:正常(復旧済),公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DST_012,t_disaster_status_histories,ライフライン_電気,電気ライフライン状況ステータス,lifelineElectricityStatus,電力供給状況,同義語・別名候補,0:停電(ライフライン切断)、1:自家発稼働、2:正常(復旧済),施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_012,t_disaster_status_histories,ライフライン_電気,電気ライフライン状況ステータス,lifelineElectricityStatus,停電・復旧状況,同義語・別名候補,0:停電(ライフライン切断)、1:自家発稼働、2:正常(復旧済),施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_013,t_disaster_status_histories,ライフライン_水道,水道ライフライン状況ステータス,lifelineWaterStatus,ライフライン_水道,原本項目名,0:断水、1:応急給水可、2:正常(復旧済),公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DST_013,t_disaster_status_histories,ライフライン_水道,水道ライフライン状況ステータス,lifelineWaterStatus,上水道供給状況,同義語・別名候補,0:断水、1:応急給水可、2:正常(復旧済),施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_013,t_disaster_status_histories,ライフライン_水道,水道ライフライン状況ステータス,lifelineWaterStatus,断水・給水状況,同義語・別名候補,0:断水、1:応急給水可、2:正常(復旧済),施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_014,t_disaster_status_histories,ライフライン_通信,通信ライフライン状況ステータス,lifelineTelecommunicationStatus,ライフライン_通信,原本項目名,0:不通、1:輻輳・不調、2:正常,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DST_014,t_disaster_status_histories,ライフライン_通信,通信ライフライン状況ステータス,lifelineTelecommunicationStatus,通信回線状況,同義語・別名候補,0:不通、1:輻輳・不調、2:正常,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_014,t_disaster_status_histories,ライフライン_通信,通信ライフライン状況ステータス,lifelineTelecommunicationStatus,ネット・電話疎通状態,同義語・別名候補,0:不通、1:輻輳・不調、2:正常,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_015,t_disaster_status_histories,混雑度・現場連絡事項,避難所現場連絡事項,siteSituationNote,混雑度・現場連絡事項,原本項目名,現場スペースの余裕状況や、緊急で必要な物資等のテキスト報告,公共施設with防災・ファシマネ属性.xlsx,確認済,原本の表記揺れ・重複を優先名で標準化
+PROP_DST_015,t_disaster_status_histories,混雑度・現場連絡事項,避難所現場連絡事項,siteSituationNote,現場状況メモ,同義語・別名候補,現場スペースの余裕状況や、緊急で必要な物資等のテキスト報告,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_DST_015,t_disaster_status_histories,混雑度・現場連絡事項,避難所現場連絡事項,siteSituationNote,物資要請特記,同義語・別名候補,現場スペースの余裕状況や、緊急で必要な物資等のテキスト報告,施設管理命名ガイドライン検討,候補,利用者検索・外部連携用同義語
+PROP_EQP_003,設備コード,ep01:車椅子可,車椅子利用可否,acc01,ep01,旧コード値（元Excel）,車椅子の使用可否,元Excel「設備コード」シート,確認済,スマートシティ acc01 に1対1対応
+PROP_EQP_003,設備コード,ep02:車椅子貸出,車椅子貸出,acc02,ep02,旧コード値（元Excel）,車椅子貸出の有無,元Excel「設備コード」シート,確認済,スマートシティ acc02 に1対1対応
+PROP_EQP_003,設備コード,ep03:ツエ貸出,ツエ貸出,acc03,ep03,旧コード値（元Excel）,ツエ貸出の有無,元Excel「設備コード」シート,確認済,スマートシティ acc03 に1対1対応
+PROP_EQP_003,設備コード,ep04:バリアフリートイレ,バリアフリートイレ,acc04,ep04,旧コード値（元Excel）,バリアフリートイレの有無,元Excel「設備コード」シート,確認済,"スマートシティ acc04 (およびacc20, acc21) に対応"
+PROP_EQP_003,設備コード,ep05:スロープ、エレベータ、エスカレータ,スロープ,acc05,ep05,旧コード値（元Excel）,段差解消スロープの有無,元Excel「設備コード」シート,確認済,"元Excelの合体項目をスマートシティ acc05, acc06, acc07, acc08 に分離正規化"
+PROP_EQP_003,設備コード,ep05:スロープ、エレベータ、エスカレータ,エレベータ,acc06,ep05,旧コード値（元Excel）,エレベータの有無,元Excel「設備コード」シート,確認済,"元Excelの合体項目をスマートシティ acc05, acc06, acc07, acc08 に分離正規化"
+PROP_EQP_003,設備コード,ep05:スロープ、エレベータ、エスカレータ,エスカレータ,acc07,ep05,旧コード値（元Excel）,エスカレータの有無,元Excel「設備コード」シート,確認済,"元Excelの合体項目をスマートシティ acc05, acc06, acc07, acc08 に分離正規化"
+PROP_EQP_003,設備コード,ep05:スロープ、エレベータ、エスカレータ,バリアフリー対応エレベーター,acc08,ep05,旧コード値（元Excel）,バリアフリー対応エレベータの有無,元Excel「設備コード」シート,確認済,"元Excelの合体項目をスマートシティ acc05, acc06, acc07, acc08 に分離正規化"
+PROP_EQP_003,設備コード,ep06:点字ブロック等の移動支援,点字ブロック,acc09,ep06,旧コード値（元Excel）,視覚障害者誘導用ブロックの有無,元Excel「設備コード」シート,確認済,"元Excelの合体項目をスマートシティ acc09, acc10 に分離正規化"
+PROP_EQP_003,設備コード,ep06:点字ブロック等の移動支援,点字触知案内板,acc10,ep06,旧コード値（元Excel）,点字触知案内板の有無,元Excel「設備コード」シート,確認済,"元Excelの合体項目をスマートシティ acc09, acc10 に分離正規化"
+PROP_EQP_003,設備コード,ep07:点字や読上による支援,補聴支援器具貸出,acc11,ep07,旧コード値（元Excel）,補聴支援機器貸出の有無,元Excel「設備コード」シート,確認済,"元Excelの合体項目をスマートシティ acc11, acc12, acc13 に分離正規化"
+PROP_EQP_003,設備コード,ep07:点字や読上による支援,音声案内設備,acc12,ep07,旧コード値（元Excel）,音声案内設備の有無,元Excel「設備コード」シート,確認済,"元Excelの合体項目をスマートシティ acc11, acc12, acc13 に分離正規化"
+PROP_EQP_003,設備コード,ep07:点字や読上による支援,補聴支援設備,acc13,ep07,旧コード値（元Excel）,補聴支援設備の有無,元Excel「設備コード」シート,確認済,"元Excelの合体項目をスマートシティ acc11, acc12, acc13 に分離正規化"
+PROP_EQP_003,設備コード,ep08:盲導犬・介助犬、聴導犬同伴,補助犬同伴可否,acc15,ep08,旧コード値（元Excel）,補助犬同伴可否,元Excel「設備コード」シート,確認済,スマートシティ acc15 に1対1対応
+PROP_EQP_003,設備コード,ep09:筆談対応,筆談対応,acc17,ep09,旧コード値（元Excel）,筆談対応の可否,元Excel「設備コード」シート,確認済,"スマートシティ acc17 (および手話acc14, 字幕acc16) に対応"
+PROP_EQP_003,設備コード,ep10:授乳室,授乳室,acc22,ep10,旧コード値（元Excel）,授乳室の有無,元Excel「設備コード」シート,確認済,スマートシティ acc22 に1対1対応
+PROP_EQP_003,設備コード,ep11:おむつ替えコーナー,おむつ替えコーナー,acc23,ep11,旧コード値（元Excel）,おむつ替えコーナーの有無,元Excel「設備コード」シート,確認済,スマートシティ acc23 に1対1対応
+PROP_EQP_003,設備コード,ep12:飲食可否,飲食可否,acc25,ep12,旧コード値（元Excel）,飲食可否,元Excel「設備コード」シート,確認済,"スマートシティ acc25 (および飲食コーナーacc24, 乳幼児飲食acc30, acc31) に対応"
+PROP_EQP_003,設備コード,ep13:ベビーカー貸出,ベビーカー貸出,acc26,ep13,旧コード値（元Excel）,ベビーカー貸出の有無,元Excel「設備コード」シート,確認済,スマートシティ acc26 に1対1対応
+PROP_EQP_003,設備コード,ep14:ベビーカー利用,ベビーカー利用可否,acc27,ep14,旧コード値（元Excel）,ベビーカー利用可否,元Excel「設備コード」シート,確認済,スマートシティ acc27 (および置場acc28) に対応
+PROP_EQP_003,設備コード,ep15:身障者駐車場,優先駐車場,acc18,ep15,旧コード値（元Excel）,優先駐車場の有無,元Excel「設備コード」シート,確認済,スマートシティ acc18 に1対1対応
+PROP_EQP_003,設備コード,ep16:その他施設,感覚過敏者向け静養室等,acc19,ep16,旧コード値（元Excel）,その他アクセシビリティ設備,元Excel「設備コード」シート,確認済,"スマートシティ acc19, acc20, acc21, acc29, acc32 等に対応"
+PROP_FAC_037,m_facilities,構造,建物構造種別,buildingStructureType,W,旧コード値・業務略称,木造（国交省標準コード: 10）,元Excel説明文「RC造、SRC造、S造、木造など」,確認済,国交省PLATEAUコード 10 に対応
+PROP_FAC_037,m_facilities,構造,建物構造種別,buildingStructureType,RC,旧コード値・業務略称,鉄筋コンクリート造（国交省標準コード: 20）,元Excel説明文「RC造、SRC造、S造、木造など」,確認済,国交省PLATEAUコード 20 に対応
+PROP_FAC_037,m_facilities,構造,建物構造種別,buildingStructureType,SRC,旧コード値・業務略称,鉄骨鉄筋コンクリート造（国交省標準コード: 30）,元Excel説明文「RC造、SRC造、S造、木造など」,確認済,国交省PLATEAUコード 30 に対応
+PROP_FAC_037,m_facilities,構造,建物構造種別,buildingStructureType,S,旧コード値・業務略称,鉄骨造（国交省標準コード: 40）,元Excel説明文「RC造、SRC造、S造、木造など」,確認済,国交省PLATEAUコード 40 に対応
+PROP_FAC_037,m_facilities,構造,建物構造種別,buildingStructureType,CB,旧コード値・業務略称,コンクリートブロック造（国交省標準コード: 50）,建築統計標準コード,確認済,国交省PLATEAUコード 50 に対応
+PROP_FAC_037,m_facilities,構造,建物構造種別,buildingStructureType,OTHER,旧コード値・業務略称,その他構造（国交省標準コード: 90）,プロジェクト受皿コード,確認済,国交省PLATEAUコード 90 に対応
+PROP_FAC_007,m_facilities,所在地_都道府県,所在地都道府県,prefecture,都道府県コード,関連語,JIS X 0401準拠の2桁コード (CL_prefecture),JIS X 0401 / 総務省,確認済,コードリスト CL_prefecture と対応
+PROP_FAC_007,m_facilities,所在地_都道府県,所在地都道府県,prefecture,prefectureCode,プロパティ英名別称,都道府県コードを表す英語プロパティ名,スマートシティ標準 / デジタル庁,確認済,API・外部連携用別称
+PROP_FAC_008,m_facilities,所在地_市区町村,所在地市区町村,city,全国地方公共団体コード,関連語,JIS X 0402準拠の6桁/5桁コード,JIS X 0402 / 総務省,確認済,別ファイル 全国地方公共団体コード.csv と対応
+PROP_FAC_008,m_facilities,所在地_市区町村,所在地市区町村,city,自治体コード,同義語・通称,全国地方公共団体コードの一般的な略称・通称,業務通称,確認済,実務で最も多用される通称
+PROP_FAC_008,m_facilities,所在地_市区町村,所在地市区町村,city,市区町村コード,同義語・通称,自治体・市区町村のコード番号,総務省 / 自治体実務,確認済,JIS X 0402の呼称
+PROP_FAC_008,m_facilities,所在地_市区町村,所在地市区町村,city,cityCode,プロパティ英名別称,市区町村コードを表す英語プロパティ名,スマートシティ標準 / デジタル庁,確認済,API・外部連携用別称
+PROP_FAC_008,m_facilities,所在地_市区町村,所在地市区町村,city,localGovernmentCode,プロパティ英名別称,地方公共団体コードを表す英語プロパティ名,デジタル庁 / オープンデータ共通フォーマット,確認済,公式推奨プロパティ名
+PROP_MNT_006,t_maintenance_histories,劣化度,劣化度スコア,deteriorationScore,1:劣化なし,旧コード値対応,国交省営繕A判定（健全）に対応,原本Excel / 国交省官庁営繕手引き,確認済,新コード: A (Sound) にマッピング
+PROP_MNT_006,t_maintenance_histories,劣化度,劣化度スコア,deteriorationScore,2:劣化度低,旧コード値対応,国交省営繕B判定（概ね健全）またはC判定（予防保全）に対応,原本Excel / 国交省官庁営繕手引き,確認済,新コード: B (GenerallySound) / C (PreventiveMaintenanceRequired) にマッピング
+PROP_MNT_006,t_maintenance_histories,劣化度,劣化度スコア,deteriorationScore,3:劣化度高,旧コード値対応,国交省営繕D判定（事後保全・早急な対策が必要）に対応,原本Excel / 国交省官庁営繕手引き,確認済,新コード: D (CorrectiveMaintenanceRequired) にマッピング
+PROP_FAC_040,m_facilities,耐震対策区分,耐震対策区分,earthquakeResistanceStatus,1:済 (耐震性確保),要約区分対比,"公的調査の 10:新耐震, 21:改修済, 22:診断済(耐震性あり) を包含",消防庁 耐震化推進状況調査,確認済,"CL_earthquakeResistanceOfficialCategory の 10, 21, 22 に対応"
+PROP_FAC_040,m_facilities,耐震対策区分,耐震対策区分,earthquakeResistanceStatus,2:未 (耐震性不足・未確認),要約区分対比,"公的調査の 23:要改修・未改修, 24:診断未実施 を包含",消防庁 耐震化推進状況調査,確認済,"CL_earthquakeResistanceOfficialCategory の 23, 24 に対応"
+PROP_FAC_040,m_facilities,耐震対策区分,耐震対策区分,earthquakeResistanceStatus,9:不明・対象外,要約区分対比,"公的調査の 90:対象外, 99:不明 を包含",消防庁 耐震化推進状況調査,確認済,"CL_earthquakeResistanceOfficialCategory の 90, 99 に対応"
+PROP_FAC_018,m_facilities,運営主体の区分,運営主体区分,operatorCategory,市直営,旧呼称・通称,自治体直営（直営）の特定市町村における旧呼称,原本Excel,確認済,新コード: 1 (直営) にマッピング
+PROP_FAC_018,m_facilities,運営主体の区分,運営主体区分,operatorCategory,自治体直営,同義語・正式名称,地方公共団体自らが職員により直接管理運営を行う方式,地方自治法第244条の2,確認済,コード: 1 (直営) の正式説明
